@@ -22,7 +22,8 @@ while True:
 
     elif len(command)==len(password) and command!=password:
         print("Try again from the beginning.")
-        break
+        moves+=1
+        counter+=1
 
     elif lives==0:
         print("You are dead. Sorry. Bye!")
@@ -55,8 +56,4 @@ while True:
                         lives -= 1
                         break
                     break
-
-
-
-
-
+                    
